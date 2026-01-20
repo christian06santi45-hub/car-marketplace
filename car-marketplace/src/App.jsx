@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar.jsx";
+import Search from "./pages/Search.jsx";
+import CarDetail from "./pages/CarDetail.jsx";
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App(){
   return (
-    <div>
-      test
-    </div>
-  )
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Search/>}/>
+        <Route path="/search" element={<Search/>}/>
+        <Route path="/car/:id" element={<CarDetail/>}/>
+      </Routes>
+    </>
+  );
 }
-
-export default App
