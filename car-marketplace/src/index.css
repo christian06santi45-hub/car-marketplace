@@ -6,3 +6,16 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --bg: #0b0f17;
+  --card: #121a2a;
+  --text: #e8eefc;
+  --muted: #a8b3cf;
+  --border: #26314d;
+  --accent: #4f7cff;
+  --danger: #ff5a6a;
+}
+
+a { 
+  color: inherit; text-decoration: none; }
